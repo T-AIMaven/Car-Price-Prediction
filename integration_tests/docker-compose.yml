@@ -1,0 +1,20 @@
+version: '3'
+services:
+  my-app:
+    build: .
+    ports:
+      - "9696:9696"
+    volumes:
+      - ../data:/app/data
+    environment:
+      - FLASK_ENV=production
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - BUCKET_NAME=${BUCKET_NAME}
+      - RUN_ID=${RUN_ID}
+      - EXPERIMENT_ID=${EXPERIMENT_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - TEST_DATA_PATH=${TEST_DATA_PATH}
+
+    # env_file:
+    #   - C:\Users\bmart\OneDrive\11_MLOps\mlops-car-prices\.env
+      # - ../.env

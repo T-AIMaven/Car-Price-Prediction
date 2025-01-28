@@ -1,0 +1,41 @@
+[tool.pylint.messages_control]
+# Disable specific pylint messages
+disable = [
+    "trailing-whitespace",          # C0303
+    "line-too-long",                # C0301
+    "missing-module-docstring",     # C0114
+    "missing-function-docstring",   # C0116
+    "invalid-name",                 # C0103
+    "broad-exception-caught",       # W0718
+    "unused-variable",              # W0612
+    "not-context-manager",          # E1129
+    "missing-final-newline",        # C0304
+    "ungrouped-imports",            # C0412
+    "pointless-string-statement",   # W0105
+    "F0401",
+    "too-few-public-methods"        # R0903
+    "too-many-function-args",       # E1121
+    "trailing-newlines",            # C0305
+    "redefined-outer-name",         # W0621
+    "too-many-arguments",           # R0913
+    "too-many-locals",              # R0914
+    "too-many-statements",          # R0915
+    "consider-using-f-string",      # C0209
+    "logging-format-interpolation", # W1202               
+    "logging-fstring-interpolation" # W120
+]
+
+
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+
+[flake8]
+max-line-length = 100
+
+[mypy]
+ignore_missing_imports = true
+
