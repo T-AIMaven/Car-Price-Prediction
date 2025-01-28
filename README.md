@@ -78,7 +78,7 @@ The Python version used for this project is Python 3.9.
 1. Clone the repo (or download it as a zip file):
 
    ```bash
-   git clone https://github.com/benitomartin/mlops-car-prices.git
+   git clone https://github.com/jayson-7w/mlops-car-prices.git
    ```
 
 2. Create the virtual environment named `main-env` using Conda with Python version 3.9:

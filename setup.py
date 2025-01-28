@@ -14,7 +14,7 @@ setup(
     name='mlops-car-prices',
     description="Car Prices MLOps",
     version='1.0',
-    author="Benito Martin",
+    author="Jayson",
     install_requires=requirements,
     packages=find_packages() + find_namespace_packages(),
 )
