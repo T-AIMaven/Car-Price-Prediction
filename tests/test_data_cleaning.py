@@ -34,7 +34,6 @@ def clean_data(TEST_PATH: str) -> pd.DataFrame:
     # Drop duplicate rows
     df = df.drop_duplicates()
     df = df.dropna()
-    
     # Return the cleaned DataFrame
     return df
 
